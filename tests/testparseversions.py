@@ -19,6 +19,10 @@ class TestParseVersions(unittest.TestCase):
         self.assertEqual(self.pv_output('testparseversions.regular.control'),
                          TestParseVersions.get_output(['pyversions', '--supported', '-v']))
 
+    def test_nonexported(self):
+        self.assertEqual(self.pv_output('testparseversions.nonexported.control'),
+                         TestParseVersions.get_output(['pyversions', '--supported', '-v']))
+
     def test_leading_newline(self):
         self.assertEqual(self.pv_output('testparseversions.leading-newline.control'),
                          TestParseVersions.get_output(['pyversions', '--supported', '-v']))

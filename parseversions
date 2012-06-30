@@ -40,11 +40,11 @@ if options.pycentral:
       # We reached the end of the first paragraph, don't keep on reading
       break
     paraborder=False
-    if line.startswith("XS-Python-Version:"):
+    if line.lower().startswith(("xs-python-version:", "x-python-version:")):
       l=line.split(':')[1]
       break
   if not l: 
-    print "XS-Python-Version header not found."
+    print "X(S)-Python-Version header not found."
     sys.exit(1)
   min=max=""
   out=[]

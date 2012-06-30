@@ -1,18 +1,18 @@
-python-support (1.0.14ubuntu2) precise; urgency=low
+python-support (1.0.15) unstable; urgency=low
 
-  * Based on IRC discussion, manually sync to Debian 1.0.14, dropping the
-    Ubuntu delta.  After next Debian upload, please resync for real.
+  [ Jakub Wilk ]
+  * parseversions:
+    + Make comparison of field names case-insensitive.
+    + Recognize X-Python-Version.
 
- -- Barry Warsaw <barry@ubuntu.com>  Fri, 21 Oct 2011 17:18:35 -0400
+  [ Piotr Ożarowski ]
+  * update-python-modules manpage: fix --install option's description
+    (closes: #671942)
+  * movemodules:
+    - doesn't raise string exceptions anymore (closes: #585332)
+  * Standards version is 3.9.3, no changes required
 
-python-support (1.0.14ubuntu1) precise; urgency=low
-
-  * Merge with Debian testing.  Remaining Ubuntu changes:
-    - movemodules, update-python-modules, debhelper/dh_pysupport:
-      Add support for --prefix.  This is used for example, by Quickly to
-      install modules into /opt/extras.ubuntu.com/<appname>-version/
-
- -- Barry Warsaw <barry@ubuntu.com>  Fri, 21 Oct 2011 16:36:09 -0400
+ -- Piotr Ożarowski <piotr@debian.org>  Sat, 30 Jun 2012 19:20:00 +0200
 
 python-support (1.0.14) unstable; urgency=low
 
@@ -25,15 +25,6 @@ python-support (1.0.14) unstable; urgency=low
   * Standards version is 3.9.2, no changes required.
 
  -- Piotr Ożarowski <piotr@debian.org>  Mon, 27 Jun 2011 20:22:56 +0200
-
-python-support (1.0.13ubuntu1) oneiric; urgency=low
-
-  * Merge with Debian; remaining changes:
-    - movemodules, update-python-modules, debhelper/dh_pysupport:
-      Add support for --prefix.  This is used for example, by Quickly to
-      install modules into /opt/extras.ubuntu.com/<appname>-version/
-
- -- Barry Warsaw <barry@ubuntu.com>  Thu, 26 May 2011 14:24:43 -0400
 
 python-support (1.0.13) unstable; urgency=low
 
@@ -65,26 +56,6 @@ python-support (1.0.11) unstable; urgency=low
 
  -- Piotr Ożarowski <piotr@debian.org>  Tue, 19 Oct 2010 17:20:22 +0200
 
-python-support (1.0.10ubuntu3) natty; urgency=low
-
-  * movemodules, update-python-modules, debhelper/dh_pysupport:
-    - add support for --prefix
-
- -- Didier Roche <didrocks@ubuntu.com>  Thu, 11 Nov 2010 14:02:13 +0100
-
-python-support (1.0.10ubuntu2) natty; urgency=low
-
-  * Add support for Python 2.7.  (LP: #664068).
-
- -- Barry Warsaw <barry@ubuntu.com>  Wed, 20 Oct 2010 14:15:18 -0400
-
-python-support (1.0.10ubuntu1) natty; urgency=low
-
-  * Merge with Debian; remaining changes:
-    - Move python2.4 and 2.5 to oldversions.
-
- -- Loïc Minier <loic.minier@ubuntu.com>  Wed, 13 Oct 2010 17:10:04 +0200
-
 python-support (1.0.10) unstable; urgency=low
 
   * Binary packages with name starting with "python3-" are now ignored by
@@ -92,13 +63,6 @@ python-support (1.0.10) unstable; urgency=low
   * Standards version is 3.9.1, no changes required.
 
  -- Piotr Ożarowski <piotr@debian.org>  Tue, 14 Sep 2010 19:05:58 +0200
-
-python-support (1.0.9ubuntu1) maverick; urgency=low
-
-  * Merge with Debian; LP: #607828; remaining changes:
-    - Move python2.4 and 2.5 to oldversions.
-
- -- Mikhail Turov <groldster@gmail.com>  Tue, 20 Jul 2010 11:41:19 +0100
 
 python-support (1.0.9) unstable; urgency=low
 
@@ -111,19 +75,6 @@ python-support (1.0.9) unstable; urgency=low
 
  -- Piotr Ożarowski <piotr@debian.org>  Sun, 27 Jun 2010 15:12:52 +0200
 
-python-support (1.0.8ubuntu2) maverick; urgency=low
-
-  * Drop leftover .bzr*.
-
- -- Loïc Minier <loic.minier@ubuntu.com>  Sat, 22 May 2010 22:23:00 +0200
-
-python-support (1.0.8ubuntu1) maverick; urgency=low
-
-  * Merge with Debian; remaining changes:
-    - Move python2.4 and 2.5 to oldversions.
-
- -- Loïc Minier <loic.minier@ubuntu.com>  Sat, 22 May 2010 17:57:45 +0200
-
 python-support (1.0.8) unstable; urgency=low
 
   [ Jakub Wilk ]
@@ -135,13 +86,6 @@ python-support (1.0.8) unstable; urgency=low
   * Use 3.0 (native) source package format 
 
  -- Piotr Ożarowski <piotr@debian.org>  Tue, 20 Apr 2010 20:11:54 +0200
-
-python-support (1.0.7ubuntu1) maverick; urgency=low
-
-  * Merge with Debian; remaining changes:
-    - Move python2.4 and 2.5 to oldversions.
-
- -- Loïc Minier <loic.minier@ubuntu.com>  Fri, 14 May 2010 14:39:20 +0200
 
 python-support (1.0.7) unstable; urgency=low
 
@@ -195,13 +139,6 @@ python-support (1.0.5) unstable; urgency=low
 
  -- Josselin Mouette <joss@debian.org>  Sat, 28 Nov 2009 20:17:55 +0100
 
-python-support (1.0.4ubuntu1) lucid; urgency=low
-
-  * Merge from debian unstable, remaining changes:
-    - Move python2.4 and 2.5 to oldversions.
-
- -- Loïc Minier <loic.minier@ubuntu.com>  Wed, 18 Nov 2009 12:17:50 -0600
-
 python-support (1.0.4) unstable; urgency=low
 
   [ Josselin Mouette ]
@@ -218,31 +155,12 @@ python-support (1.0.4) unstable; urgency=low
 
  -- Josselin Mouette <joss@debian.org>  Thu, 08 Oct 2009 22:39:22 +0200
 
-python-support (1.0.3ubuntu2) lucid; urgency=low
-
-  * Drop support for python2.5.
-
- -- Matthias Klose <doko@ubuntu.com>  Sat, 31 Oct 2009 20:02:52 +0100
-
-python-support (1.0.3ubuntu1) karmic; urgency=low
-
-  * Merge from debian unstable, remaining changes:
-    - Drop python2.4 from the supported options.
-
- -- Muharem Hrnjadovic <muharem@canonical.com>  Wed, 13 May 2009 19:33:39 +0200
 python-support (1.0.3) unstable; urgency=low
 
   * update-python-modules: be resilient against broken directories in 
     /usr/share/python-support. Closes: #528130.
 
  -- Josselin Mouette <joss@debian.org>  Tue, 12 May 2009 21:46:05 +0200
-
-python-support (1.0.2ubuntu1) karmic; urgency=low
-
-  * Merge from Debian unstable, remaining changes:
-    - Drop python2.4 from the supported options.
-
- -- Steve Langasek <steve.langasek@ubuntu.com>  Wed, 29 Apr 2009 10:02:13 +0000
 
 python-support (1.0.2) unstable; urgency=low
 
@@ -347,34 +265,6 @@ python-support (0.90.0) experimental; urgency=low
   * Add support for python2.6.
 
  -- Josselin Mouette <joss@debian.org>  Wed, 18 Feb 2009 21:44:25 +0100
-
-python-support (0.8.7ubuntu4) jaunty; urgency=low
-
-  * Fix invocation of hashlib md5 in pysupport-movemodules; thanks to
-    Kyle Ambroff <kwa@icculus.org> for the fix.  LP: #340757.
-
- -- Steve Langasek <steve.langasek@ubuntu.com>  Fri, 10 Apr 2009 01:36:33 +0000
-
-python-support (0.8.7ubuntu3) jaunty; urgency=low
-
-  * use hashlib instead of the md5 module (LP: #340757)
-  * depend on python2.5 (because of hashlib)
-
- -- Michael Vogt <michael.vogt@ubuntu.com>  Wed, 08 Apr 2009 22:17:49 +0200
-
-python-support (0.8.7ubuntu2) jaunty; urgency=low
-
-  * pysupport-movemodules: Catch files installed in /usr/local.
-
- -- Matthias Klose <doko@ubuntu.com>  Tue, 24 Feb 2009 19:00:03 +0100
-
-python-support (0.8.7ubuntu1) jaunty; urgency=low
-
-  * Add python2.6 to the supported versions, drop python2.4 from the
-    supported options.
-  * pysupport-movemodules: Work with new 'dist-packages' directories.
-
- -- Matthias Klose <doko@ubuntu.com>  Tue, 17 Feb 2009 13:30:07 +0100
 
 python-support (0.8.7) unstable; urgency=low
 
@@ -884,4 +774,3 @@ python-support (0.1) unstable; urgency=low
   * Initial release (closes: #345638).
 
  -- Josselin Mouette <joss@debian.org>  Mon,  2 Jan 2006 14:52:42 +0100
-
