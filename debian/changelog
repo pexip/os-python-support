@@ -1,3 +1,9 @@
+python-support (1.0.14ubuntu2pexip1) pexip; urgency=low
+
+  * Prepare Pexip packaging
+
+ -- John-Mark Bell <jmb@pexip.com>  Wed, 25 Dec 2013 03:04:22 +0000
+
 python-support (1.0.14ubuntu2) precise; urgency=low
 
   * Based on IRC discussion, manually sync to Debian 1.0.14, dropping the

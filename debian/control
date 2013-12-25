@@ -1,14 +1,16 @@
 Source: python-support
 Section: python
 Priority: optional
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
 XSBC-Original-Maintainer: Josselin Mouette <joss@debian.org>
-Uploaders: Bernd Zeimetz <bzed@debian.org>, Piotr Ożarowski <piotr@debian.org>
+XSBC-Pexip-Original-Uploaders: Bernd Zeimetz <bzed@debian.org>, Piotr Ożarowski <piotr@debian.org>
 Build-Depends: debhelper (>= 7), cdbs
 Build-Depends-Indep: python (>= 2.5)
 Standards-Version: 3.9.2
 Vcs-Svn: svn://anonscm.debian.org/collab-maint/deb-maint/python-support/trunk
 Vcs-Browser: http://anonscm.debian.org/viewvc/collab-maint/deb-maint/python-support/trunk/
+XS-Pexip-Upstream: http://archive.ubuntu.com/ubuntu/ precise
 
 Package: python-support
 Architecture: all
