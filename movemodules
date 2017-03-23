@@ -184,7 +184,7 @@ for basedir in args:
   if not package:
     package=os.path.split(basedir)[1]
   if not package:
-    raise "Unable to extract the package name."
+    raise Exception("Unable to extract the package name.")
 
   public_file = os.path.join(basedir,sourcepath,package+".public")
   if os.path.isfile (public_file):
