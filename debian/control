@@ -10,7 +10,7 @@ Build-Depends-Indep: python (>= 2.5)
 Standards-Version: 3.9.2
 Vcs-Svn: svn://anonscm.debian.org/collab-maint/deb-maint/python-support/trunk
 Vcs-Browser: http://anonscm.debian.org/viewvc/collab-maint/deb-maint/python-support/trunk/
-XS-Pexip-Upstream: http://archive.ubuntu.com/ubuntu/ precise
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ jessie
 
 Package: python-support
 Architecture: all
